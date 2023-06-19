@@ -1,3 +1,10 @@
+import { UserCard } from './UserCard/UserCard';
+import user from 'data/user.json';
+
 export const App = () => {
-  return <div>React homework template</div>;
+  return (
+    <>
+      <UserCard {...user} />
+    </>
+  );
 };
