@@ -1,3 +1,4 @@
+import propTypes from 'prop-types';
 import { StatsElement } from 'components/Stats/StatsStyled';
 export const StatsComponent = ({ id, label, percentage, randomColor }) => {
   return (
@@ -6,4 +7,9 @@ export const StatsComponent = ({ id, label, percentage, randomColor }) => {
       <span class="percentage">{percentage}</span>
     </StatsElement>
   );
+};
+StatsComponent.propTypes = {
+  id: propTypes.string,
+  Label: propTypes.string,
+  Percentage: propTypes.number,
 };

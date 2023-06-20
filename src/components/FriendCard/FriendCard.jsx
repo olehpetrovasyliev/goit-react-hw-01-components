@@ -1,4 +1,5 @@
 import { Friend } from 'components/Friends/friendsStyled';
+import propTypes from 'prop-types';
 
 export const FriendCard = ({ avatar, name, isOnline, id }) => {
   return (
@@ -8,4 +9,11 @@ export const FriendCard = ({ avatar, name, isOnline, id }) => {
       <p className="name">{name}</p>
     </Friend>
   );
+};
+
+FriendCard.propTypes = {
+  id: propTypes.number,
+  isOnline: propTypes.bool,
+  avatar: propTypes.string,
+  name: propTypes.string,
 };
