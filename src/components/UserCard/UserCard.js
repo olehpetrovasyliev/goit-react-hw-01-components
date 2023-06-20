@@ -1,4 +1,5 @@
 import { Card, UserSlatsElement, UserSlatsList } from './UserCardStyled';
+import propTypes from 'prop-types';
 
 export const UserCard = ({ username, tag, location, avatar, stats }) => {
   return (
@@ -23,4 +24,12 @@ export const UserCard = ({ username, tag, location, avatar, stats }) => {
       </UserSlatsList>
     </Card>
   );
+};
+
+UserCard.propTypes = {
+  username: propTypes.string,
+  tag: propTypes.string,
+  location: propTypes.string,
+  avatar: propTypes.string,
+  stats: propTypes.object,
 };
