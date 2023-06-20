@@ -1,8 +1,9 @@
-export const StatsComponent = ({ id, label, percentage }) => {
+import { StatsElement } from 'components/Stats/StatsStyled';
+export const StatsComponent = ({ id, label, percentage, randomColor }) => {
   return (
-    <li key={id} class="item">
+    <StatsElement key={id} className="item" randomColor={randomColor}>
       <span class="label">{label}</span>
       <span class="percentage">{percentage}</span>
-    </li>
+    </StatsElement>
   );
 };

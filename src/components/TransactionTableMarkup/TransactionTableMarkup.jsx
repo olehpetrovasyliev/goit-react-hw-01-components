@@ -1,9 +1,14 @@
+import {
+  TableR,
+  TransactionsDash,
+} from 'components/Transactions/transactionsStyled';
+
 export const TransactionMarkup = ({ id, type, amount, currency }) => {
   return (
-    <tr key={id}>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <TableR key={id}>
+      <TransactionsDash>{type}</TransactionsDash>
+      <TransactionsDash>{amount}</TransactionsDash>
+      <TransactionsDash>{currency}</TransactionsDash>
+    </TableR>
   );
 };

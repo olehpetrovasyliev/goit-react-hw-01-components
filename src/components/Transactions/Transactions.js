@@ -1,8 +1,9 @@
 import { TransactionMarkup } from 'components/TransactionTableMarkup/TransactionTableMarkup';
+import { TransactionsComp } from './transactionsStyled';
 
 export const Transactions = ({ transactionsArr }) => {
   return (
-    <table class="transaction-history">
+    <TransactionsComp>
       <thead>
         <tr>
           <th>Type</th>
@@ -13,6 +14,6 @@ export const Transactions = ({ transactionsArr }) => {
       <tbody>
         {transactionsArr.map(transaction => TransactionMarkup(transaction))}
       </tbody>
-    </table>
+    </TransactionsComp>
   );
 };
