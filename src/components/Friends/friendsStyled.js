@@ -13,3 +13,17 @@ export const Friend = styled.li`
   border-radius: 4px;
   padding: 10px;
 `;
+
+export const OnlineSpan = styled.span`
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  background-color: teal;
+`;
+
+export const OfflineSpan = styled.span`
+  border-radius: 100px;
+  height: 10px;
+  width: 10px;
+  background-color: tomato;
+`;
