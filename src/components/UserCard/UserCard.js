@@ -15,7 +15,7 @@ export const UserCard = ({ username, tag, location, avatar, stats }) => {
         </UserSlatsElement>
         <UserSlatsElement>
           <span className="label">Views</span>
-          <span class="quantity">{stats.views}</span>
+          <span className="quantity">{stats.views}</span>
         </UserSlatsElement>
         <UserSlatsElement>
           <span className="label">Likes</span>
